@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Permite mostrar correctamente los acentos y caracteres especiales como la letra Ñ-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ajusta el area de visualización al ancho de la pantalla-->
+    <title>Pagina de Valeria</title>
+</head>
+
+
+<body>
+    <!--contenido de la pagina, titulo principal de la pagina-->
+    <!--Style aplica un estilo CSS y color del encabezado-->
+    <h1 style="color:red">Bienvenido a la pagina de Valeria</h1>
+    <!--este es un parrafo de ejemplo-->
+    <p>Esta es una simple pagina creada con html.</p>
+    <!--H2 sirve para crear un subtitulo -->
+    <h2>Me gusta mucho la Formula 1 y apoyar a McLaren</h2>
+    <!--H3 se puede organizar un subtema dentro de H2 -->
+    <h3>Me gusta mucho escuchar musica, especialmente a Gabito Ballesteros</h3>
+    <!--H4 se utiliza para subdividir aun mas el contenido en detalles menores -->
+    <h4>Me gusta ir al gimnasio y trabajar en mis metas</h4>
+    <!-- H5 se usa para agregar detalles adicionales o información especifica -->
+    <h5>Me interesa aprender sobre negocios y emprendimiento</h5>
+    <!--H6 se utiliza para notas o detalles muy especificos -->
+    <h6>Disfruto escuchar musica, entrenar, ver peliculas y compartir tiempo con mis amigos</h6>
+
+    <!--carrusel-->
+    <section class="mt-4">
+        <h2 class="text-primary">Mis gustos en imagenes</h2>
+        <!-- el carrusel crea el componente y slide agrega la transicion
+         el id permite que las flechas encuentren el carrusel-->
+         <div id="carrusel" class="carousel slide bg-dark">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                    src="https://images.unsplash.com/photo-1574629810360-7efbbe195018"
+                    class="d-block w-100"
+                    width="300"
+                    alt="imagen de futbol">
+                    <div class="carousel item">
+                         <img
+                         src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba"
+                         class="d-block w-100"
+                         width="300"
+                         alt="imagen de cine">
+                         <div class="carousel-item">
+                            <img
+                            src="https://images.unsplash.com/photo-1511379938547-c1f69419868d"
+                            class="d-block w-100"
+                            width="300"
+                            alt="imagen de musica">
+                         </div>
+                    </div> 
+                </div>
+            </div>
+         </div>
+    </section>
+
+<button class="carousel-control-prev"
+type="button"
+data-bs-target="#carrusel"
+data-bs-slide="prev"
+aria-label="imagen anterior"></button>
+
+
+
+
+    <!-- Tarjetas -->
+<section class="mt-4">
+    <h2 class="text-primary">Acerca de mis gustos</h2>
+
+    <!-- Contenedor de la tarjeta -->
+    <div class="card mb-4">
+        <!-- Contenido de la tarjeta -->
+        <div class="card-body">
+            <h5 class="card-title">Peliculas</h5>
+            <p class="card-text">Me gusta escuchar musica y descubrir canciones nuevas.</p>
+
+            <!-- Enlace a la tabla de mis planes -->
+            <a href="#planes" class="btn btn-primary">Conoce mis planes</a>
+        </div>
+    </div>
+</section>
+
+<!-- ========== TARJETAS ========== -->
+     <section class="mt-4"> 
+        <h2 class="text-primary"> Acerca de mis gustos </h2>
+        <!-- Tarjeta básica card crea el contenedor -->
+         <div class="card mb-4">
+            <!-- card-body crea el contenido de la tarjeta -->
+             <div class="card-body">
+                <h5 class="card-title"> Peliculas </h5>
+                <p class="card-text"> Me gusta aprender sobre negocios internacionales y desarrollo personal. </p>
+                    <!-- este enlace lleva a la tabla de mis planes -->  
+                <a href="#planes" class="btn btn-primary"> Conoce mis planes </a>
+            </div>
+        </div>
+        <!-- Tarjeta con Imagen de Futbol -->
+         <div class="card mb4">
+
+
+    <!-- src es la ruta de la imagen, alt describe la imagen
+       width="300" le da un ancho de 300 pixeles a la imagen -->
+          <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018"
+          alt="Imagen de futbol" 
+          width="300"
+          class="img-fluid">
+
+        <div class="card-body">
+            <h3 class="card-title">Formula 1</h3>
+            <p class="card-text">Me gusta la Formula 1 y apoyar a McLaren.</p>
+            <a href="#planes" class="btn btn-secondary">Conoce mis planes</a>
+        </div>
+    </div>
+    <!-- Tarjeta con Imagen 
+         Usamos la Imagen de peliculas -->
+    <div class="card mb-4">
+        <img 
+            src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba"
+            alt="Imagen de cine" 
+            width="300"
+            class="img-fluid">
+       <div class="card-body">
+           <h3 class="card-title">Musica</h3>
+           <p class="card-text">Me gusta escuchar a Gabito Ballesteros y disfrutar de la musica urbana.</p>
+           <a href="#top comidas" class="btn btn-success"> Conoce mis gustos </a>
+        </div>
+    </div> 
+    <!-- Tarjeta con Imagen 
+         Usamos la de fantasia -->
+    <div class="card mb-4">              
+        <div class="card-header">
+            Una de mis sagas favoritas
+        </div>    
+        <img 
+            src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23"
+            alt="Imagen de fantasia" 
+            width="300"
+            class="img-fluid">
+        <div class="card-body">
+            <h3 class="card-title">Los Juegos del Hambre</h3> 
+            <p class="card-text">Me gusta ir al gimnasio y mantenerme activa.</p>
+                <a href="#showtime" class="btn btn-danger"> Conoce que veo en la TV </a>
+        </div>
+    </div>
+
+
+     </div>
+    <!-- usamos la imagen de cine-->
+     <div class="card mb-4">
+        <img
+        src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c"
+        alt="imagen de cine"
+        width="300"
+        class="img-fluid">
+        <div class="card-body">
+            <h3 class="card-title">Peliculas</h3>
+            <p class="card-text">Me gusta ver peliculas y series en mi tiempo libre.</p>
+            <a href="#pasatiempos" class="btn btn-success"> conoce mis pasatiempos</a>
+
+        </div>
+     </div>
+
+     <!--tarjeta con imagen, USAMOS OTRA IMAGEN-->
+     <div class="card mb-4">
+        <div class="card header">
+</div>
+<img
+src="https://images.unsplash.com/photo-1511379938547-c1f69419868d"
+alt="imagen de musica"
+width="400"
+class="img-fluid">
+<div class="card-body">
+    <h3 class="card-title">Musica</h3>
+    <p class="card-text">Me gusta escuchar musica, especialmente a Gabito Ballesteros.</p>
+    <a href="#pasatiempos" class="btn btn-danger">conoce mis pasatiempos</a>
+</div>
+     </div>
+
+
+
+
+        >
+
+    <!-- src es la ruta de la imagen, alt describe la imagen
+     width="300" le da un ancho de 300 pixeles a la imagen -->
+     <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23" width="300">
+     <br>
+     <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba"
+     alt="imagen de cine" width="300">
+
+
+     <!--Lista no ordenada-->
+     <section>
+        <h2> Cosas que hago en mi tiempo libre</h2>
+        <!-- u1 crea una lista no ordenada, li crea un elemento de la lista -->
+         <u1>
+            <l1> Ir al gimnasio</l1>
+            <li> Escuchar musica</li>
+            <l1> Ver peliculas y series</l1>
+            <l1> Ver Formula 1</l1>
+         </u1>
+
+     </section>
+
+     <!--Lista ordenada-->
+     <section>
+        <h2>Mis comidas favoritas</h2>
+        <!-- ol crea una lista ordenada, li crea un elemento de la lista-->
+         <ol>
+            <li> Tacos </li>
+            <li> Aguachile </li>
+            <li> Pasta</li>
+         </ol>
+
+
+     </section>
+     <!--tabla-->
+     <h2>Mis planes para desconectarme</h2>
+<table border="1">
+    <!--tr crea una fila de la tabla, th crea un encabezado de la tabla-->
+    <tr>
+        <th>Tiempo disponible</th>
+        <th>Planes</th>
+        <th> Qué necesito</th>
+    </tr>
+    <tr>
+        <td> 45 minutos </td>
+        <td> Ver una pelicula </td>
+        <td> Una pantalla y palomitas</td>
+
+    </tr>
+     <tr>
+        <td> 15 minutos </td>
+        <td> Escuchar musica </td>
+        <td> Audifonos y una playlist</td>
+
+    </tr>
+     <tr>
+        <td> 90 minutos </td>
+        <td> Ver una serie </td>
+        <td> Una tele y algo para comer </td>
+
+    </tr>
+</table>
+
+
+    <br>
+    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018">
+
+<!---ajusta la visualización de la pagina-->
+<title> pagina de Valeria / musica y Formula 1</title>
+<!--resume el contenid de la pagina, google puede usarlo en sus contenidos de busqueda-->
+<meta name="description"    
+content="pagina de Valeria, donde comparto mis gustos y pasatiempos">
+
+<!--name "keywords" ayuda a los motores de busqueda a identificar el contenido de la pagina-->
+<meta name="keywords"
+content="Valeria, musica, Gabito Ballesteros, gimnasio, Formula 1, McLaren, negocios">
+
+<!--name = "author" indica el author de la pagina-->
+<meta name="author" content="Valeria">
+
+<!--aviso de contenido propio-->
+<meta name="copyright" content=" 2026 Valeria. todos los derechos reservados.">
+
+
+<!--alerta-->
+<div calss="alert alert-info" role="alert">
+    Bienvenido, aqui comparto mis gustos por la musica, el gimnasio y la Formula 1.
+</div>
+
+<!--botones para navegar-->
+<!--href indica la ruta del archivo al que se quiere navegar id="pasatiempos"-->
+<nav class="mb-4" aria-label="secciones de la pagina"></nav>
+<a href="pasatiempos" class="btn btn-primary mb-2">
+mis pasatiempos 
+</a>
+<a href="comidas" class="btn btn-warning mb-2">
+mis planes para desconectarme</a>
+
+<!--botones para naavegar-->
+<!--href indica la ruta del archivo L QUE SE QUIERE NAVEGAR
+ID= "P"ASATIEMPOS"-->
+<nav class="navbar navbar-expand-lg bg-light mb-4"
+aria-label="secciones de la pagina">
+<div class="container-fluid">
+    <a href="#pasastiempos" class="btn btn-primary"> mis pasatiempos</a>
+    <a href="#comidas" class="btn btn-succes mb-2"> mis comidas favoritas</a>
+    <a href="#planes" class="btn btn-warming mb-2"></a>
+
+    <!--href=#inicio lleva al elemnto con id="inicio"-->
+    <a class="navbar-brand" href="#inicio"> pagina de Valeria</a>
+
+    <!-- #menu debe de coincidir con el id menu-->
+     <button class="navbar-toggler">
+     type="button"
+     data-bs-toggle="collapse"
+     data-bs-target="#menu"
+     aria-controls="menu"
+     aria-expanded="false"
+     aria-label="abrir o cerrar menu">
+     <span class="navbar-toggler-icon"></span>
+
+</button>
+</div>
+</nav>
+</body>
+</html>
